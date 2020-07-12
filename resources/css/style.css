@@ -22,6 +22,15 @@ html{
 
 }
 
+.clearfix{zoom: 1}
+.clearfix:after{
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
 
 /*--------- Reusable component--------- */
 
@@ -116,10 +125,35 @@ h2:after{
     font-size: 300%;
     display: block;
     color:#e67e22;
-    margin-bottom: 10px;
+    margin-bottom: 10px;}
+
+.icon-small{
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #e67e22;
+    font-size: 120%;
+}
+/*--------- Links --------- */
+
+a:link,
+a:active{
+    color: #e67e22;
+    text-decoration: none;
+    padding-bottom: 1px ;
+    border-bottom: 1px solid #e67e22;
+    transition: border-bottom 0.2s, color:0.2s;
 
 
 }
+
+a:hover,
+a:active{
+    color: #555;
+    border-bottom: 1px solid transparent;
+
+}
+
 
 
 /*--------- BUTTONS --------- */
@@ -184,6 +218,7 @@ header{
     background-position: center;
 
     height: 100vh;
+    background-attachment: fixed;
 }
 
 .logo{
@@ -272,6 +307,79 @@ header{
     opacity: 1;
 
 
+}
+
+
+
+/*--------- How it works--------- */
+
+.section-steps{
+    background-color: #f4f4f4;
+}
+
+.steps-box:first-child{
+    text-align: right;
+    padding-right:3%;
+    margin-top: 30px;
+
+}
+
+.steps-box:last-child{
+    padding-left: 3%;
+    margin-top: 70px;
+
+}
+
+.app-screen{
+    width: 40%;
+
+}
+
+.works-step{
+    margin-bottom: 50px;
+}
+
+.works-step:last-of-type{
+    margin-bottom: 70px;
+}
+
+.works-step div{
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    display: inline-block;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    font-size: 150%;
+    margin-right: 25px;
+
+}
+
+
+.btn-app img{
+    height: 50px;
+    width: auto;
+    margin-bottom:10px;
+
+}
+
+.btn-app:link,
+.btn-app:visited {
+    border: 0;
+}
+/*--------- Cities--------- */
+
+.box img{
+   width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.city-features{
+    margin-bottom: 5px;
 }
 
 
